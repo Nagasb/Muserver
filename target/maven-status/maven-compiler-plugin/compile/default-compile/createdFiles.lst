@@ -1,0 +1,5 @@
+com\muserver\samples\MuServerApp$UserResource.class
+com\muserver\samples\service\Repository.class
+com\muserver\samples\MuServerApp.class
+com\muserver\samples\model\Reservation.class
+com\muserver\samples\service\ReservationService.class

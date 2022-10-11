@@ -1,0 +1,86 @@
+[2022-10-07 17:48:33,799] [main] WARN  io.muserver.SSLContextBuilder - Will not use TLSv1.3 as it is not supported by the current JDK
+[2022-10-07 19:25:39,503] [nioEventLoopGroup-4-2] INFO  io.muserver.HttpExchange - Sending a 500 to the client with ErrorID=ERR-1bcf3736-09ad-492c-94fd-0622bae261f3 for GET http://localhost:59490/jaxrsexample/users/1
+java.lang.NullPointerException: null
+	at io.muserver.docs.samples.JaxRSExample$UserResource.get(JaxRSExample.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.muserver.rest.ResourceMethod.invoke(ResourceMethod.java:90)
+	at io.muserver.rest.RestHandler.invokeResourceMethod(RestHandler.java:183)
+	at io.muserver.rest.RestHandler.handle(RestHandler.java:135)
+	at io.muserver.NettyHandlerAdapter.lambda$onHeaders$0(NettyHandlerAdapter.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2022-10-07 19:38:33,164] [nioEventLoopGroup-4-2] INFO  io.muserver.HttpExchange - Sending a 500 to the client with ErrorID=ERR-c7a12c3b-ee7c-424d-9c82-34d58ee414ab for GET http://localhost:56944/jaxrsexample/users/1
+java.lang.NullPointerException: null
+	at io.muserver.docs.samples.JaxRSExample$UserResource.get(JaxRSExample.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.muserver.rest.ResourceMethod.invoke(ResourceMethod.java:90)
+	at io.muserver.rest.RestHandler.invokeResourceMethod(RestHandler.java:183)
+	at io.muserver.rest.RestHandler.handle(RestHandler.java:135)
+	at io.muserver.NettyHandlerAdapter.lambda$onHeaders$0(NettyHandlerAdapter.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2022-10-07 19:55:18,094] [nioEventLoopGroup-4-2] INFO  io.muserver.HttpExchange - Sending a 500 to the client with ErrorID=ERR-82b70aa0-6a45-4482-aa8a-b9ab8a8cdf42 for GET http://localhost:60173/jaxrsexample/users/1
+java.lang.NullPointerException: null
+	at io.muserver.docs.samples.JaxRSExample$UserResource.get(JaxRSExample.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.muserver.rest.ResourceMethod.invoke(ResourceMethod.java:90)
+	at io.muserver.rest.RestHandler.invokeResourceMethod(RestHandler.java:183)
+	at io.muserver.rest.RestHandler.handle(RestHandler.java:135)
+	at io.muserver.NettyHandlerAdapter.lambda$onHeaders$0(NettyHandlerAdapter.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2022-10-07 20:18:53,225] [nioEventLoopGroup-4-2] INFO  io.muserver.Http1Connection - Closed idle connection to /0:0:0:0:0:0:0:1:61234
+[2022-10-07 20:42:22,821] [nioEventLoopGroup-4-2] INFO  io.muserver.Http1Connection - Closed idle connection to /0:0:0:0:0:0:0:1:60668
+[2022-10-07 23:15:11,411] [nioEventLoopGroup-4-2] INFO  io.muserver.HttpExchange - Sending a 500 to the client with ErrorID=ERR-ebb25d05-5849-4cb0-bb54-0e3ea4b59a18 for POST http://localhost:57947/jaxrsexample/users
+java.lang.Exception: Same slot is not available
+	at io.muserver.docs.samples.service.ReservationService.book(ReservationService.java:17)
+	at io.muserver.docs.samples.JaxRSExample$UserResource.reserveRestaurent(JaxRSExample.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.muserver.rest.ResourceMethod.invoke(ResourceMethod.java:90)
+	at io.muserver.rest.RestHandler.invokeResourceMethod(RestHandler.java:183)
+	at io.muserver.rest.RestHandler.handle(RestHandler.java:135)
+	at io.muserver.NettyHandlerAdapter.lambda$onHeaders$0(NettyHandlerAdapter.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2022-10-07 23:21:04,706] [nioEventLoopGroup-4-3] INFO  io.muserver.HttpExchange - Sending a 500 to the client with ErrorID=ERR-8a1ca156-1341-4a84-bb02-5d26efb44bc8 for POST http://localhost:57947/jaxrsexample/users
+java.lang.Exception: Same slot is not available
+	at io.muserver.docs.samples.service.ReservationService.book(ReservationService.java:17)
+	at io.muserver.docs.samples.JaxRSExample$UserResource.reserveRestaurent(JaxRSExample.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.muserver.rest.ResourceMethod.invoke(ResourceMethod.java:90)
+	at io.muserver.rest.RestHandler.invokeResourceMethod(RestHandler.java:183)
+	at io.muserver.rest.RestHandler.handle(RestHandler.java:135)
+	at io.muserver.NettyHandlerAdapter.lambda$onHeaders$0(NettyHandlerAdapter.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2022-10-07 23:31:04,731] [nioEventLoopGroup-4-3] INFO  io.muserver.Http1Connection - Closed idle connection to /0:0:0:0:0:0:0:1:50657
+[2022-10-07 23:31:19,812] [nioEventLoopGroup-4-2] INFO  io.muserver.Http1Connection - Closed idle connection to /0:0:0:0:0:0:0:1:50664
+[2022-10-07 23:50:08,313] [nioEventLoopGroup-4-2] INFO  io.muserver.Http1Connection - Closed idle connection to /0:0:0:0:0:0:0:1:50874
+[2022-10-07 23:51:47,113] [nioEventLoopGroup-4-2] INFO  io.muserver.Http1Connection - Closed idle connection to /0:0:0:0:0:0:0:1:50964
+[2022-10-07 23:52:50,767] [nioEventLoopGroup-4-2] INFO  io.muserver.Http1Connection - Closed idle connection to /0:0:0:0:0:0:0:1:51035
+[2022-10-08 15:52:27,473] [nioEventLoopGroup-4-2] INFO  io.muserver.Http1Connection - Closed idle connection to /0:0:0:0:0:0:0:1:57362
